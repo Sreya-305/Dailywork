@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+<h2>setTimeout() with a Callback</h2>
+
+<p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
+
+<h1 id="demo"></h1>
+<p id="demo1"></p>
+
+<script>
+setTimeout(myFunction, 3000); //myFunction is callback
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Demonstrarting Callback function !!";
+}
+</script>
+<p>Using setInterval() to display time every second</p>
+<script>
+    setInterval(myFunction, 1000);
+    
+    function myFunction() {
+      let d = new Date();
+      document.getElementById("demo1").innerHTML=
+      d.getHours() + ":" +
+      d.getMinutes() + ":" +
+      d.getSeconds();
+    }
+    </script>
+
+</body>
+</html>
